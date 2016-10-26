@@ -18,7 +18,8 @@ $main_dishes = array('cuke' => 'Braised Sea Cucumber',
                      'tripe' => 'Sauteed Tripe with Wine Sauce',
                      'taro' => 'Stewed Pork with Taro',
                      'giblets' => 'Baked Giblets with Salt',
-                     'abalone' => 'Abalone with Marrow and Duck Feet');
+                     'abalone' => 'Abalone with Marrow and Duck Feet',
+                     'pizza' => 'Cheese Pizza');
 
 $drinks = array('Coke' => 'Coca Cola',
     'Diet Coke' => 'Diet Coke',
@@ -72,7 +73,7 @@ function validate_form( ) {
     } else {
         $input['size'] = '';
     }
-    if (! in_array($input['size'], ['small','medium','large'])) {
+    if (! in_array($input['size'], ['small','medium','large', 'Xlarge'])) {
         $errors[] = 'Please select a size.';
     }
     // sweet is required
